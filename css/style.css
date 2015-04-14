@@ -1,4 +1,12 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('../img/page_background.png') center repeat;
+}
 .wrapper {
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
 }

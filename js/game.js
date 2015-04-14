@@ -72,6 +72,17 @@ var update = function (modifier) {
 	if (39 in keysDown) { // Player holding right
 		hero.x += hero.speed * modifier;
 	}
+	
+    // Has the hero reached the tree line?
+	if(
+        hero.x <= 30
+        || hero.y <= 30
+        || hero.x >= (canvas.width - 60)
+        || hero.y >= (canvas.height - 60)
+    ) {
+        hero.x = canvas.width / 2;
+        hero.y = canvas.height / 2;
+	}
 
 	// Are they touching?
 	if (
