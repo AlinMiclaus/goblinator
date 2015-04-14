@@ -3,6 +3,7 @@ var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = 512;
 canvas.height = 480;
+canvas.className = "block";
 document.body.appendChild(canvas);
 
 // Background image
@@ -11,7 +12,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "images/background.png";
+bgImage.src = "img/background.png";
 
 // Hero image
 var heroReady = false;
@@ -19,7 +20,7 @@ var heroImage = new Image();
 heroImage.onload = function () {
 	heroReady = true;
 };
-heroImage.src = "images/hero.png";
+heroImage.src = "img/hero.png";
 
 // Monster image
 var monsterReady = false;
@@ -27,7 +28,7 @@ var monsterImage = new Image();
 monsterImage.onload = function () {
 	monsterReady = true;
 };
-monsterImage.src = "images/monster.png";
+monsterImage.src = "img/monster.png";
 
 // Game objects
 var hero = {
@@ -100,7 +101,7 @@ var render = function () {
 
 	// Score
 	ctx.fillStyle = "rgb(250, 250, 250)";
-	ctx.font = "24px Helvetica";
+	ctx.font = "18px Helvetica";
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
 	ctx.fillText("Goblins caught: " + monstersCaught, 32, 32);
