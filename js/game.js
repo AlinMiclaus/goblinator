@@ -1,10 +1,11 @@
+
 // Create the canvas
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = 512;
 canvas.height = 480;
-canvas.className = "wrapper";
-document.body.appendChild(canvas);
+canvas.id = "game-block";
+document.getElementById('game-wrapper').appendChild(canvas);
 
 // Background image
 var bgReady = false;
