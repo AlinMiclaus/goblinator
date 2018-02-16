@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Goblinator | A simple Canvas Game</title>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-	</head>
-	<body>
-    	<div id="game-wrapper">
-    	    <div id="game-sidebar">
-    	        <h1>Instructions</h1>
-    	        <div>
-    	            <span class="icon fa fa-arrow-right"></span>
-    	            move right 
-    	        </div>
-    	        <div>
-    	            <span class="icon fa fa-arrow-left"></span>
-    	            move left
-    	        </div>
-    	        <div>
-    	            <span class="icon fa fa-arrow-up"></span>
-    	            move up
-    	        </div>
-    	        <div>
-    	            <span class="icon fa fa-arrow-down"></span>
-    	            move down
-    	        </div>
-    	    </div>
-    	</div>
-		<script src="js/game.js"></script>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>Goblinator | A simple Canvas Game</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+
+<body>
+	<h1 class="left-area">GOBLINATOR
+		<small id="youWinHeader" class="hidden">You Win!</small>
+	</h1>
+	
+	<div id="game-wrapper">
+		<div id="game-sidebar">
+			<h1>Instructions</h1>
+			<div>
+				<span class="icon fa fa-arrow-right"></span>
+				move right
+			</div>
+			<div>
+				<span class="icon fa fa-arrow-left"></span>
+				move left
+			</div>
+			<div>
+				<span class="icon fa fa-arrow-up"></span>
+				move up
+			</div>
+			<div>
+				<span class="icon fa fa-arrow-down"></span>
+				move down
+			</div>
+		</div>
+	</div>
+	<button class="left-area" onclick="restartGame()">Restart Game</button>
+	<button class="left-area" onclick="saveNewLimit()">Save New Limit</button>
+	<input id="MonstersLimit" type="text" name="Names" placeholder="Monster to catch, 4 is default">
+
+	<script src="js/game.js"></script>
+</body>
+
 </html>

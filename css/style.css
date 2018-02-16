@@ -35,3 +35,14 @@ body {
 .icon {
     padding: 10px;
 }
+.left-area {
+    padding: 10px;
+    margin: 10px
+}
+
+.show{
+   display:inline-block;
+}
+.hidden{
+   display: none;
+}
